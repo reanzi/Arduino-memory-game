@@ -16,6 +16,16 @@ int grnBtn = 2,
 int level = 0;
 int LEDS = 1;
 
+/*
+ menu 
+    player- single /double
+    level  - 0-5
+    LEDS - 1-4
+    speed - auto,slow,fine,fast,faster
+    sound  - on/off
+    bestScore
+*/
+
 void setup()
 {
 }
@@ -32,7 +42,8 @@ int numberGen(int level)
     // generate random number, whicha are the number of led's blinks depending on the level
 }
 
-void blink(int speed)
+void blink(int blinkCount, int speed)
 {
+    // blinkCount is an array
     // this will blink individual led as instructed
 }
