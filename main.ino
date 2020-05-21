@@ -18,21 +18,30 @@ int LEDS = 1;
 
 /*
  menu 
-    player- single /double
-    level  - 0-5
+    player- mmoja /wawili
+    level  - 0-5, mtoto, kuanza, mzoefu, mtaalam, auto
     LEDS - 1-4
-    speed - auto,slow,fine,fast,faster
-    sound  - on/off
+    speed - auto,taratibu,kawaida,haraka,kasi
+    sound  - ndio/hapana
+    score
     bestScore
 */
 
 void setup()
 {
+    // init eeprom
+    // read eeprom and set bestScore
 }
 
 void loop()
 {
     // main loop
+
+    // check bestScore
+    // if(score> bestScore) {
+    //     bestScore = score
+    //     // write bestScore to eeprom
+    // }
 }
 
 // logics and functions
@@ -40,10 +49,22 @@ void loop()
 int numberGen(int level)
 {
     // generate random number, whicha are the number of led's blinks depending on the level
+    // generate blink times
 }
-
+int getLevel(int score)
+{
+    // Generate the level depending on the score
+}
 void blink(int blinkCount, int speed)
 {
     // blinkCount is an array
+    //  [index,value] = led, blinkCounts
     // this will blink individual led as instructed
+}
+void displayText(int pos, char text)
+{
+}
+void drawScreeen()
+{
+    // checks ; state ~ praying, over, welcome
 }
